@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Email</title>
+    <style>
+        .wrapper { 
+            background-color: #EBEBEB;
+            padding: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .logo {
+            width: 100%;
+        }
+
+        .logo img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .content {
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .button-active {
+            display: block;
+            margin: 0 auto;
+            padding: 8px 16px;
+            background-color: #0abe51;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+            border-radius: 8px;
+            border: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img src={{{logo}}}>            
+        </div>
+        <div class="content">
+            <h5>Xin chào,</h5>
+            <p>Bạn vừa đăng ký tài khoản tại website: <span><a href={{{web}}}>{{{web}}}</a></span></p>
+            <button class="button-active" >Kích hoạt tài khoản</button>
+        </div>
+    </div>
+</body>
+
+</html>
